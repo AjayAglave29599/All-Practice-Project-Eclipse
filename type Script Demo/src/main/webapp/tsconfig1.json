@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true
+        },
+        "files": [
+            "importingModule.ts",
+            "variables_export.ts"
+            ],
+            "include": ["*"],
+            "exclude": ["/subfolder/file*.ts"]
+}

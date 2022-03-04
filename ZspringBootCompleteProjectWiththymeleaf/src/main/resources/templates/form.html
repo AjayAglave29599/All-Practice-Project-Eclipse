@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  form{
+      border:3px solid black;
+      padding:20px;
+      margin-top:40px;
+      box-shadow:10px 15px;
+  }
+  
+  </style>
+</head>
+<body>
+
+ <div class="col-md-4"></div>
+ <div class="col-md-4">
+<form >
+<label>Id</label>
+<input type="text"  class="form-control" th:field="${frm.id}" required placeholder="enter ur id" >
+<label>Name</label>
+<input type="text"  class="form-control"  th:field="${frm.name}" required placeholder="enter ur name"><br>
+
+<input type="submit" value="submit"  class="btn btn-success">
+<input type="reset" value="cancle"  class="btn btn-danger">
+
+</form>
+</div>
+</body>
+</html>

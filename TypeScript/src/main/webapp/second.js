@@ -1,0 +1,15 @@
+var fruit123 = ["1", "One", "Ajay"];
+console.log(fruit123);
+var fruits123 = ["One", "Two", "Three"];
+console.log(fruits123);
+var myarray = [1, true, false, "Mr. Ajay", { 'name': 'Ajay', 'phone': '454545' }];
+console.log(myarray);
+var scores = [1, 2, 4, 56, 6, 4];
+console.log(scores);
+var scores1;
+scores1 = [6, 8, 5, 8, 4, 6, 78];
+console.log(scores1);
+var strOrNumber = [3, "name", "address", 555];
+console.log(strOrNumber);
+var strOrNumber1 = [3, "name", "address", 555];
+console.log(strOrNumber1);
