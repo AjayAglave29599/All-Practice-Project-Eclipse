@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+    function myFunction() {
+        alert("You have clicked on paragraph");
+    }
+    function myFunction1() {
+        alert("Second Click has been triggered");
+    }
+</script>
+</head>
+<body>
+    <p id="mypara">Click Here</p>
+    <p id="mypara1">Click Here</p>
+    <script>
+        document.getElementById("mypara").addEventListener('click', myFunction);
+        document.getElementById("mypara")
+                .addEventListener('click', myFunction1);
+        document.getElementById("mypara1").addEventListener("click",
+                function() {
+                    alert("Your Function has been Triggered");
+                });
+    </script>
+</body>
+</html>

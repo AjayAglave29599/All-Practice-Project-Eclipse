@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+    let a; // declaration of global variable
+    var d = 150;
+    a = 100; // assignment of value
+    const pi=3.14;
+    console.log(a); // using the value 100
+    console.log(d); // using the value 150
+    console.log(pi); // using the value 100
+    function myFunction() { // creating function
+        a = 200;   // hoisting sample changing in global value
+        let b = 10;   // local variable
+        var c = 20;
+        d=300;
+        //pi=2.4455; // const can't be changed
+    }
+    myFunction(); // calling the function
+    console.log("A : "+a); // using the value 200
+    //console.log("B : "+b); // using the value
+    //console.log("C : "+c); // using the value
+    console.log("D : "+d); // using the value
+    console.log(pi); // using the value 100
+</script>
+</head>
+<body>
+ 
+</body>
+</html>

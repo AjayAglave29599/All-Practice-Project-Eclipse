@@ -1,0 +1,45 @@
+package com.hibernate;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Person {
+	
+	@Id
+	@GeneratedValue
+	private int personId;
+	private String personName;
+	public Person(int personId, String personName) {
+		super();
+		this.personId = personId;
+		this.personName = personName;
+	}
+	public Person() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public int getPersonId() {
+		return personId;
+	}
+	public void setPersonId(int personId) {
+		this.personId = personId;
+	}
+	public String getPersonName() {
+		return personName;
+	}
+	public void setPersonName(String personName) {
+		this.personName = personName;
+	}
+	@Override
+	public String toString() {
+		return "Person [personId=" + personId + ", personName=" + personName + "]";
+	}
+	
+	
+	
+	
+	
+
+}

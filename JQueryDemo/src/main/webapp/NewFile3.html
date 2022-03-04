@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+.newdiv {
+    background-color: blue;
+    color: red;
+    width: 100px;
+    height: 100px;
+}
+</style>
+<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#mydiv").animate({
+        color: 'green',
+        width: '200px',
+        height: '200px'
+        });
+    });
+</script>
+</head>
+<body>
+    <div id="mydiv" class="newdiv"> This is sample div</div>
+</body>
+</html>

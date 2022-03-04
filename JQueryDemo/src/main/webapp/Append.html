@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    	/*                                  //  #events$
+    	$(document).load(function)
+$(selector).click(function)
+$(selector).dblclick(function)
+$(selector).mouseenter(function)
+$(selector).mouseleave(function)
+$(selector).keydown(function)
+$(selector).submit(function)
+$(selector).focus(function)
+$(selector).blur(function)
+$(selector).resize(function)
+$(selector).unload(function)
+$(selector).mousedown(function)
+$(selector).mouseup(function)
+    	*/
+        $("button").click(function() {
+            $(".testdiv").html("<h1>Hello</h1>");
+            $("p").remove();
+            $("#mydiv").empty();
+            $("p").remove(".testdiv1, .testdiv2");
+            $(".afterit").before("<h1>Hello World</h1>");
+            $(".afterit").after("<h1>Hello World</h1>");
+            $("input:text").val("Mr. Aglave Ajay");
+            $("#appendDemp").append("<h1>Hello World</h1>");
+            $("body").attr("bgcolor","red");
+            $("body").attr("text","blue");
+        });
+    });
+</script>
+</head>
+<body>
+    <button>MyButton</button>
+    <p class="testdiv">My Name will replace here</p>
+    <p class="testdiv1">My Name will replace here</p>
+    <p class="testdiv2">My Name will replace here</p>
+    <p>My Name will replace here</p>
+    <div id="mydiv">This Text will clear</div>
+    <div class="afterit">This will have another tag too </div>
+    <input type="text" value="Sample value">
+    <p id="appendDemp"> Append functiin will work here</p>
+</body>
+</html>

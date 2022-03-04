@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+    <img src="img/test/12T9u0f.jpg">
+    <form action="http://localhost:8080/employee" method="get"
+        name="registration" id="form_id" autocomplete="on" target="blank">
+        <table>
+            <caption>Registration Form</caption>
+ 
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname"
+                    placeholder="Enter User Name" autofocus="autofocus"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname"
+                    placeholder="Enter User Name" autofocus="autofocus"
+                    pattern="[A-Za-z0-9]{5}"
+                    title="Only Uppercase and Numbers are allowd upto 5 letter"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email" placeholder="Enter Email"
+                    required="required"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone"
+                    placeholder="Enter Phone Number"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob" placeholder="Enter DOB"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="time" name="tob" placeholder="Enter Time"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>Male<input type="radio" name="gender" value="Male">
+                    Female<input type="radio" name="gender" value="Female">
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>High School<input type="checkbox" name="qualification"
+                    value="HS"> Intermediate<input type="checkbox"
+                    name="qualification" value="inter"> Graduate<input
+                    type="checkbox" name="qualification" value="graduate"><br>Post
+                    Graduate<input type="checkbox" name="qualification" value="pg">
+                    Ph.D<input type="checkbox" name="qualification" value="doctrate">
+                    Post Doctorate Fellowship<input type="checkbox"
+                    name="qualification" value="pdf">
+                </td>
+            </tr>
+            <tr>
+                <td>Primary Language Known</td>
+                <td><select name="language">
+                        <option selected="selected">Hindi</option>
+                        <option>English</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Comment</td>
+                <td><textarea rows="10" cols="20" readonly="readonly">Comments Goes HEre</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="clear form"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

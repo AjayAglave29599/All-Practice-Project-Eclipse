@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("button").click(function() {
+            $(".testdiv").html("<h1>Hello</h1>");
+            $("p").remove();
+            $("#mydiv").empty();
+            $("p").remove(".testdiv1, .testdiv2");
+            $(".afterit").after("<h1>Hello World</h1>");
+            $("input:text").val("Mr. Ajay Aglave");
+        });
+    });
+</script>
+</head>
+<body>
+    <button>MyButton</button>
+    <p class="testdiv">My Name will replace here</p>
+    <p class="testdiv1">My Name will replace here</p>
+    <p class="testdiv2">My Name will replace here</p>
+    <p>My Name will replace here</p>
+    <div id="mydiv">This Text will clear</div>
+    <div class="afterit">This will have another tag too </div>
+    <input type="text" value="Sample value">
+</body>
+</html>
